@@ -1,0 +1,5 @@
+#igore enviroment variables config file
+.env
+
+#ignore node.js modules
+node_modules/
