@@ -1,0 +1,153 @@
+body{
+    background-color: rgba(117, 138, 156, 0.214);
+}
+
+/* Main container */
+.container {   
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+   margin-top: -5%;
+}
+
+/* Main heading */
+.container h1 {
+  color: #008b45;
+  background-color: #007d413c;
+  padding: 20px;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+  width: 70%;
+}
+
+/* Subtitle */
+.container h2 {
+  color: #555;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+/* Form card */
+.form {
+  width: 100%;
+  max-width: 400px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  box-sizing: border-box;
+  transition: 0.7s;
+ 
+}
+.form:hover{
+ box-shadow: 0 8px 30px rgb(1, 164, 7);
+}
+
+/* Safaricom image */
+.form img {
+  width: 400px;
+  height: 170px;
+  margin-bottom: 10px;
+  margin-top: -10%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+/* Input fields */
+.form input:not(.btn) {
+  width: 100%;
+  padding: 14px 15px;
+  border: 1px solid #d5ded8;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  background-color: #f9fbf9;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Input focus effect */
+.form input:not(.btn):focus {
+  border-color: #00a859;
+  box-shadow: 0 0 0 3px rgba(0, 168, 89, 0.12);
+  background-color: #fff;
+}
+
+/* Submit button */
+.form .btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #04961a;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Button hover */
+.form .btn:hover {
+  background-color: #007d40;
+  transform: translateY(-2px);
+}
+
+/* Button click */
+.form .btn:active {
+  transform: scale(0.98);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 480px) {
+  .container h1 {
+    font-size: 25px;
+  }
+
+  .container h2 {
+    font-size: 16px;
+  }
+
+  .form {
+    padding: 22px;
+  }
+
+  .form img {
+    width: 150px;
+    height: 130px;
+  }
+}
+
+
+.feedback {
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-weight: 100;
+  width: 90%;
+  text-align: center;
+}
+
+.feedback.success {
+  background-color: #e5f7e9;
+  color: green;
+
+}
+
+.feedback.error {
+  background-color: #ffe5e5;
+  color: red;
+
+}
